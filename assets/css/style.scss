@@ -1,0 +1,46 @@
+@import './variables.scss';
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+.big-hair-color-1 { color: $bighair-color-1; }
+.big-hair-color-2 { color: $bighair-color-2; }
+.big-hair-color-3 { color: $bighair-color-3; }
+.big-hair-color-4 { color: $bighair-color-4; }
+.big-hair-color-5 { color: $bighair-color-5; }
+
+.big-hair-bg-1 { background: $bighair-color-1; }
+.big-hair-bg-2 { background: $bighair-color-2; }
+.big-hair-bg-3 { background: $bighair-color-3; }
+.big-hair-bg-4 { background: $bighair-color-4; }
+.big-hair-bg-5 { background: $bighair-color-5; }
+
+.big-hair-border-1 { border: 1px solid $bighair-color-1; }
+.big-hair-border-2 { border: 1px solid $bighair-color-2; }
+.big-hair-border-3 { border: 1px solid $bighair-color-3; }
+.big-hair-border-4 { border: 1px solid $bighair-color-4; }
+.big-hair-border-5 { border: 1px solid $bighair-color-5; }
+
+body { background: $bg-body; font-family: 'Montserrat';}
+.title-header { color: $bighair-color-1;}
+.user-icon { width: 32px; }
+.search-button { position: absolute; margin-left: 155px; margin-top: -33px; background-color: transparent !important; border: 0em !important;}
+.search-header::placeholder { color: $bighair-color-2; }
+.container-services{ white-space:nowrap; overflow-x:auto; }
+.border-radius-default { border-radius: $border-radius-default }
+.details-service { margin-top: -39px; }
+
+body.access { background: url($access-bg); background-position: center; height: 100vh !important; background-repeat: no-repeat; overflow-y: hidden; }
+
+
