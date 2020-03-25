@@ -14,23 +14,23 @@
          url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
-.big-hair-color-1 { color: $bighair-color-1; }
-.big-hair-color-2 { color: $bighair-color-2; }
-.big-hair-color-3 { color: $bighair-color-3; }
-.big-hair-color-4 { color: $bighair-color-4; }
-.big-hair-color-5 { color: $bighair-color-5; }
+.big-hair-color-1 { color: $bighair-color-1 !important; }
+.big-hair-color-2 { color: $bighair-color-2 !important; }
+.big-hair-color-3 { color: $bighair-color-3 !important; }
+.big-hair-color-4 { color: $bighair-color-4 !important; }
+.big-hair-color-5 { color: $bighair-color-5 !important; }
 
-.big-hair-bg-1 { background: $bighair-color-1; }
-.big-hair-bg-2 { background: $bighair-color-2; }
-.big-hair-bg-3 { background: $bighair-color-3; }
-.big-hair-bg-4 { background: $bighair-color-4; }
-.big-hair-bg-5 { background: $bighair-color-5; }
+.big-hair-bg-1 { background: $bighair-color-1 !important; }
+.big-hair-bg-2 { background: $bighair-color-2 !important; }
+.big-hair-bg-3 { background: $bighair-color-3 !important; }
+.big-hair-bg-4 { background: $bighair-color-4 !important; }
+.big-hair-bg-5 { background: $bighair-color-5 !important; }
 
-.big-hair-border-1 { border: 1px solid $bighair-color-1; }
-.big-hair-border-2 { border: 1px solid $bighair-color-2; }
-.big-hair-border-3 { border: 1px solid $bighair-color-3; }
-.big-hair-border-4 { border: 1px solid $bighair-color-4; }
-.big-hair-border-5 { border: 1px solid $bighair-color-5; }
+.big-hair-border-1 { border: 1px solid $bighair-color-1 !important; }
+.big-hair-border-2 { border: 1px solid $bighair-color-2 !important; }
+.big-hair-border-3 { border: 1px solid $bighair-color-3 !important; }
+.big-hair-border-4 { border: 1px solid $bighair-color-4 !important; }
+.big-hair-border-5 { border: 1px solid $bighair-color-5 !important; }
 
 .btn-bighair1 { background-color: $bighair-color-1; color: #FFF; &:hover { color: #FFF; }}
 .btn-bighair2 { background-color: #FFF; color: $bighair-color-1; &:hover { color: $bighair-color-1; }}
@@ -55,4 +55,6 @@ body.signin { background: url($signin-bg); background-position: center; height: 
 .user-cover { height: $cover-profile-height; background-image: url('../imgs/user-profile-cover.png'); filter: blur($cover-profile-size); -webkit-filter: blur($cover-profile-size); }
 .user-img { width: $user-img-width; height: $user-img-height; border-radius: 50%; border: 7px solid $bighair-color-1; position: relative; margin-top: -80px; }
 
+.carousel-inner .carousel-item img { max-height: $slider-max-height; }
 
+a.default-link { text-decoration: none !important; &:hover { text-decoration: none !important; } }

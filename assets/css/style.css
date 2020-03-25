@@ -9,63 +9,63 @@
   /* Legacy iOS */
 }
 .big-hair-color-1 {
-  color: #C08D60;
+  color: #C08D60 !important;
 }
 
 .big-hair-color-2 {
-  color: #C8B09B;
+  color: #C8B09B !important;
 }
 
 .big-hair-color-3 {
-  color: #F7CAA3;
+  color: #F7CAA3 !important;
 }
 
 .big-hair-color-4 {
-  color: #F1C615;
+  color: #F1C615 !important;
 }
 
 .big-hair-color-5 {
-  color: #9A1159;
+  color: #9A1159 !important;
 }
 
 .big-hair-bg-1 {
-  background: #C08D60;
+  background: #C08D60 !important;
 }
 
 .big-hair-bg-2 {
-  background: #C8B09B;
+  background: #C8B09B !important;
 }
 
 .big-hair-bg-3 {
-  background: #F7CAA3;
+  background: #F7CAA3 !important;
 }
 
 .big-hair-bg-4 {
-  background: #F1C615;
+  background: #F1C615 !important;
 }
 
 .big-hair-bg-5 {
-  background: #9A1159;
+  background: #9A1159 !important;
 }
 
 .big-hair-border-1 {
-  border: 1px solid #C08D60;
+  border: 1px solid #C08D60 !important;
 }
 
 .big-hair-border-2 {
-  border: 1px solid #C8B09B;
+  border: 1px solid #C8B09B !important;
 }
 
 .big-hair-border-3 {
-  border: 1px solid #F7CAA3;
+  border: 1px solid #F7CAA3 !important;
 }
 
 .big-hair-border-4 {
-  border: 1px solid #F1C615;
+  border: 1px solid #F1C615 !important;
 }
 
 .big-hair-border-5 {
-  border: 1px solid #9A1159;
+  border: 1px solid #9A1159 !important;
 }
 
 .btn-bighair1 {
@@ -177,6 +177,17 @@ body.signin {
   border: 7px solid #C08D60;
   position: relative;
   margin-top: -80px;
+}
+
+.carousel-inner .carousel-item img {
+  max-height: 450px;
+}
+
+a.default-link {
+  text-decoration: none !important;
+}
+a.default-link:hover {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
