@@ -2,7 +2,7 @@
 
 /* montserrat-regular - latin */
 @font-face {
-    font-family: 'Montserrat';
+    font-family: $default-font;
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
@@ -35,14 +35,14 @@
 .btn-bighair1 { background-color: $bighair-color-1; color: #FFF; &:hover { color: #FFF; }}
 .btn-bighair2 { background-color: #FFF; color: $bighair-color-1; &:hover { color: $bighair-color-1; }}
 
-body { background: $bg-body; font-family: 'Montserrat';}
+body { background: $bg-body; font-family: $default-font;}
 .title-header { color: $bighair-color-1;}
 .user-icon { width: 32px; }
 .search-button { position: absolute; margin-left: 155px; margin-top: -33px; background-color: transparent !important; border: 0em !important;}
 .form-control::placeholder { color: $bighair-color-2; }
-.form-control { color: $bighair-color-1 !important; &:focus { border-color: #C08D60; outline: 0; box-shadow: 0 0 0 0.2rem rgba(192,141,96,.25); }}
+.form-control { color: $bighair-color-1 !important; &:focus { border-color: #C08D60; outline: 0; box-shadow: $box-shadow-form-control; }}
 .container-services{ white-space:nowrap; overflow-x:auto; }
-.border-radius-default { border-radius: $border-radius-default }
+.border-radius-default { border-radius: $border-radius-default !important; }
 .details-service { margin-top: -39px; }
 
 body.access { background: url($access-bg); background-position: center; height: 100vh !important; background-repeat: no-repeat; overflow-y: hidden; }
@@ -58,3 +58,6 @@ body.signin { background: url($signin-bg); background-position: center; height: 
 .carousel-inner .carousel-item img { max-height: $slider-max-height; }
 
 a.default-link { text-decoration: none !important; &:hover { text-decoration: none !important; } }
+
+.custom-card { background: $custom-card-background !important; border: 0 !important; }
+.card-body { background: $custom-card-body-background; border-bottom-left-radius:$border-radius-default; border-bottom-right-radius:$border-radius-default; }

@@ -124,7 +124,7 @@ body {
 }
 
 .border-radius-default {
-  border-radius: 7px;
+  border-radius: 7px !important;
 }
 
 .details-service {
@@ -188,6 +188,17 @@ a.default-link {
 }
 a.default-link:hover {
   text-decoration: none !important;
+}
+
+.custom-card {
+  background: transparent !important;
+  border: 0 !important;
+}
+
+.card-body {
+  background: #FFF;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */

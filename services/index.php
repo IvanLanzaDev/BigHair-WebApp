@@ -13,6 +13,7 @@
 
     
         <?php 
+            echo "<div class='d-none d-md-block'>"; include('../components/header.php'); echo "</div>";
             include('../components/content-services.php');
         ?>
     

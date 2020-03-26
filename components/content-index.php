@@ -225,9 +225,81 @@
 
         <!-- SERVICE -->
 
-        <div class="row d-flex justify-content-between mt-4 mb-4">
-            <h4 class="big-hair-color-1 mt-2">Unhas</h4>
-            <a href="#" class="badge badge-primary big-hair-bg-1 pt-3 pb-3 px-2">Ver tudo</a>
+        <div class="services">
+
+            <div class="row d-flex justify-content-between mt-4 mb-4 px-5 services-title">
+                <h4 class="big-hair-color-1 mt-2">Unhas</h4>
+                <a href="#" class="badge badge-primary big-hair-bg-1 pt-3 pb-3 px-2">Ver tudo</a>
+            </div>
+
+            <div class="row services-items text-left mb-5 mx-0 px-0 d-flex flex-nowrap justify-content-around">
+                
+                <a href="#" class="default-link big-hair-color-1">
+                    <div class="card custom-card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/imgs/nails-placeholder.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Mãos<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
+                            <p class="card-text big-hair-color-2">Unhas</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="default-link big-hair-color-1">
+                    <div class="card custom-card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/imgs/nails-placeholder.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Mãos<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
+                            <p class="card-text big-hair-color-2">Unhas</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="default-link big-hair-color-1">
+                    <div class="card custom-card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/imgs/nails-placeholder.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Mãos<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
+                            <p class="card-text big-hair-color-2">Unhas</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="row d-flex justify-content-between mt-4 mb-4 px-5 services-title">
+                <h4 class="big-hair-color-1 mt-2">Cabelos</h4>
+                <a href="#" class="badge badge-primary big-hair-bg-1 pt-3 pb-3 px-2">Ver tudo</a>
+            </div>
+
+            <div class="row services-items text-left mb-3 mx-0 px-0 d-flex flex-nowrap justify-content-around">
+                
+                <a href="#" class="default-link big-hair-color-1">
+                    <div class="card custom-card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/imgs/hair-placeholder.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Corte<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
+                            <p class="card-text big-hair-color-2">Cabelos</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="default-link big-hair-color-1">
+                    <div class="card custom-card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/imgs/hair-placeholder.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Corte<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
+                            <p class="card-text big-hair-color-2">Cabelos</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="default-link big-hair-color-1">
+                    <div class="card custom-card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/imgs/hair-placeholder.png" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-0">Corte<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
+                            <p class="card-text big-hair-color-2">Cabelos</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
         </div>
 
         <!-- END SERVICE -->
