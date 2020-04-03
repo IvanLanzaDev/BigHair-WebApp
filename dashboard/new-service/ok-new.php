@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BigHair Extension</title>
+    <title>BigHair Extension - Dashboard</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    
+    <style>
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+ 
+}
+
+.message-container {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.message-container {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+    </style>
+    
 
 </head>
 <body>
 
-    
-        <?php 
-            include('./components/header.php');
-            include('./components/content-index.php');
-            include('./components/footer.php');
-        ?>
-    
+    <div class="message-container text-center">
+      <img src="../../assets/icons/ok-icon.svg" width="100vw">
+      <h1 class="text-success"> Tudo certo ! </h1>
+      <small>
+        <p class="lead"> O serviço foi <span class="text-success"> criado! </span>
+      </small>
+
+      <div class="d-flex flex-row">
+      <a href="../categories" class="btn btn-success btn-lg btn-block"> Ver serviços cadastrados </a>
+      </div>
+    </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

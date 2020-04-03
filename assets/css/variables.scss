@@ -11,11 +11,13 @@ $border-radius-default: 7px;
 $border-radius-screen: 15px 15px 0px 0px;
 
 $access-bg: '../imgs/access-background.png';
+$access-desktop-bg: '../imgs/access-background-desktop.png';
 $signin-bg: '../imgs/signin-background.png';
 $signup-bg: '../imgs/signup-background.png';
 
 $box-shadow-sign-in-up: -1px -3px 20px 0px #FFF;
 $box-shadow-form-control: 0 0 0 0.2rem rgba(192,141,96,.25);
+$box-shadow-access-form-control: 0 0 0 0.2rem rgb(255, 255, 255);
 
 $cover-profile-height: 30vh;
 $cover-profile-size: 6px;

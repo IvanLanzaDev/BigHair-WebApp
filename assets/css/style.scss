@@ -46,13 +46,14 @@ body { background: $bg-body; font-family: $default-font;}
 .details-service { margin-top: -39px; }
 
 body.access { background: url($access-bg); background-position: center; height: 100vh !important; background-repeat: no-repeat; overflow-y: hidden; }
+body.access-desktop { background: #FFF; }
 body.signup { background: url($signup-bg); background-position: center; height: 100vh !important; background-repeat: no-repeat; overflow-y: hidden; }
 body.signin { background: url($signin-bg); background-position: center; height: 100vh !important; background-repeat: no-repeat; overflow-y: hidden; }
 
 .border-radius-screen { border-radius: $border-radius-screen; }
 .container-signin { box-shadow: $box-shadow-sign-in-up; }
 
-.user-cover { height: $cover-profile-height; background-image: url('../imgs/user-profile-cover.png'); filter: blur($cover-profile-size); -webkit-filter: blur($cover-profile-size); }
+.user-cover { height: $cover-profile-height; filter: blur($cover-profile-size); -webkit-filter: blur($cover-profile-size); }
 .user-img { width: $user-img-width; height: $user-img-height; border-radius: 50%; border: 7px solid $bighair-color-1; position: relative; margin-top: -80px; }
 
 .carousel-inner .carousel-item img { max-height: $slider-max-height; }
@@ -61,3 +62,8 @@ a.default-link { text-decoration: none !important; &:hover { text-decoration: no
 
 .custom-card { background: $custom-card-background !important; border: 0 !important; }
 .card-body { background: $custom-card-body-background; border-bottom-left-radius:$border-radius-default; border-bottom-right-radius:$border-radius-default; }
+
+.access-desktop-bg {  height: 100vh !important; background: url($access-desktop-bg); background-repeat: no-repeat !important; background-size: contain; overflow-y: hidden !important; overflow-x: hidden !important;}
+
+input.access-form-control { background: transparent !important; color: #FFF; transition: all 0.37s ease !important; &:focus { color: #FFF !important; border-color: #FFF; outline: 0; box-shadow: $box-shadow-access-form-control; }}
+input.access-form-control::placeholder { color: #FFF !important }

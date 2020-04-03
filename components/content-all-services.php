@@ -169,72 +169,17 @@
 
     <!-- DESKTOP -->
 
-    <div class="row">
-        <!-- SLIDER -->
-        <div class="container-fluid d-none d-md-block">
-            <div id="carouselExample col-12" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/imgs/slider-example.png"  class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imgs/slider-example.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/imgs/slider-example.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-        <!-- END SLIDER -->
-    </div>
-
-    <div class="container text-center mt-4">
-        <!-- SERVICE ICONS -->
-        <h3 class="big-hair-color-1"> Cabelos e serviços de beleza </h3>
-        <div class="d-flex my-4 flex-nowrap justify-content-around">
-            <div class="row">
-               <a href="#" class="default-link">
-                    <div class="service-item px-4 pt-4 pb-1 bg-light border-radius-default mr-3">
-                        <img src="../assets/icons/hair-dryer.svg">
-                        <p class="mt-3 big-hair-color-1">Cabelos</p>
-                    </div>
-                </a>
-                <a href="#" class="default-link">
-                    <div class="px-4 pt-4 pb-1 bg-light border-radius-default mr-3">
-                        <img src="../assets/icons/hair-tint.svg">
-                        <p class="mt-3 big-hair-color-1">Coloração</p>
-                    </div>
-                </a>
-                <a href="#" class="default-link">
-                    <div class="px-4 pt-4 pb-1 bg-light border-radius-default mr-3">
-                        <img src="../assets/icons/hand-icon.svg">
-                        <p class="mt-3 big-hair-color-1">Unhas</p>
-                    </div>
-                </a>
-                <a href="#" class="default-link">
-                    <div class="px-4 pt-4 pb-1 bg-light border-radius-default mr-3">
-                        <img src="../assets/icons/body-icon.svg">
-                        <p class="mt-3 big-hair-color-1">Depilação</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!-- END SERVICE ICONS -->
+    <div class="container text-center mt-5">
+      
 
         <!-- SERVICE -->
 
         <div class="services">
 
-            <div class="row d-flex justify-content-between mt-4 mb-4 px-5 services-title">
-                <h4 class="big-hair-color-1 mt-2">Unhas</h4>
-                <a href="../services/all-services.php" class="badge badge-primary big-hair-bg-1 pt-3 pb-3 px-2">Ver tudo</a>
-            </div>
 
-            <div class="row services-items text-left mb-5 mx-0 px-0 d-flex flex-nowrap justify-content-around">
+            <div class="row services-items text-left mb-5 mx-0 px-0 d-flex justify-content-around">
                 
-                <a href="../services" class="default-link big-hair-color-1">
+                <a href="index.php" class="default-link big-hair-color-1 mb-4">
                     <div class="card custom-card" style="width: 18rem;">
                         <img class="card-img-top" src="../assets/imgs/nails-placeholder.png" alt="Imagem de capa do card">
                         <div class="card-body">
@@ -243,7 +188,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="default-link big-hair-color-1">
+                <a href="index.php" class="default-link big-hair-color-1 mb-4">
                     <div class="card custom-card" style="width: 18rem;">
                         <img class="card-img-top" src="../assets/imgs/nails-placeholder.png" alt="Imagem de capa do card">
                         <div class="card-body">
@@ -252,7 +197,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="default-link big-hair-color-1">
+                <a href="index.php" class="default-link big-hair-color-1 mb-4">
                     <div class="card custom-card" style="width: 18rem;">
                         <img class="card-img-top" src="../assets/imgs/nails-placeholder.png" alt="Imagem de capa do card">
                         <div class="card-body">
@@ -262,44 +207,11 @@
                     </div>
                 </a>
 
-            </div>
-
-            <div class="row d-flex justify-content-between mt-4 mb-4 px-5 services-title">
-                <h4 class="big-hair-color-1 mt-2">Cabelos</h4>
-                <a href="#" class="badge badge-primary big-hair-bg-1 pt-3 pb-3 px-2">Ver tudo</a>
-            </div>
-
-            <div class="row services-items text-left mb-3 mx-0 px-0 d-flex flex-nowrap justify-content-around">
                 
-                <a href="#" class="default-link big-hair-color-1">
-                    <div class="card custom-card" style="width: 18rem;">
-                        <img class="card-img-top" src="../assets/imgs/hair-placeholder.png" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title mb-0">Corte<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
-                            <p class="card-text big-hair-color-2">Cabelos</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="default-link big-hair-color-1">
-                    <div class="card custom-card" style="width: 18rem;">
-                        <img class="card-img-top" src="../assets/imgs/hair-placeholder.png" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title mb-0">Corte<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
-                            <p class="card-text big-hair-color-2">Cabelos</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="default-link big-hair-color-1">
-                    <div class="card custom-card" style="width: 18rem;">
-                        <img class="card-img-top" src="../assets/imgs/hair-placeholder.png" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title mb-0">Corte<span class="badge badge-secondary big-hair-bg-2 float-right py-3">R$ 29,00</span></h5>
-                            <p class="card-text big-hair-color-2">Cabelos</p>
-                        </div>
-                    </div>
-                </a>
 
-            </div>
+            </div> <!-- ROW -->
+
+            
         </div>
 
         <!-- END SERVICE -->

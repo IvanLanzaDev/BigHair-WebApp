@@ -139,6 +139,10 @@ body.access {
   overflow-y: hidden;
 }
 
+body.access-desktop {
+  background: #FFF;
+}
+
 body.signup {
   background: url("../imgs/signup-background.png");
   background-position: center;
@@ -165,7 +169,6 @@ body.signin {
 
 .user-cover {
   height: 30vh;
-  background-image: url("../imgs/user-profile-cover.png");
   filter: blur(6px);
   -webkit-filter: blur(6px);
 }
@@ -199,6 +202,31 @@ a.default-link:hover {
   background: #FFF;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+
+.access-desktop-bg {
+  height: 100vh !important;
+  background: url("../imgs/access-background-desktop.png");
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+input.access-form-control {
+  background: transparent !important;
+  color: #FFF;
+  transition: all 0.37s ease !important;
+}
+input.access-form-control:focus {
+  color: #FFF !important;
+  border-color: #FFF;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem white;
+}
+
+input.access-form-control::placeholder {
+  color: #FFF !important;
 }
 
 /*# sourceMappingURL=style.css.map */
