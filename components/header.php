@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -38,7 +40,9 @@
     <!-- DESKTOP -->
 
     <nav class="navbar navbar-expand-lg navbar-light big-hair-bg-3 d-none d-md-flex">
-  <a class="navbar-brand" href="#"><img src="../assets/imgs/logo-header-desktop.png"></a>
+      <a class="navbar-brand" href="../">
+        <img src="../assets/imgs/logo-header-desktop.png">
+      </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -63,9 +67,29 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
+    <?php 
+      session_start();
+      if(!$_SESSION['email_user'] && !$_SESSION['pass_user']) {
+        echo "
+          <a href='../sign-in/' class='btn btn-bighair1 mr-3 my-2 my-sm-0'>Entrar</a>
+          <a href='../sign-up/' class='btn btn-light my-2 my-sm-0'>Criar Conta</a>
+        ";
+      }else{
+        echo "
+        <div class='dropdown'>
+          <button class='btn btn-bighair1 dropdown-toggle' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+            Olá $user_login_info[name_user]
+          </button>
+          <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+            <a class='dropdown-item' href='../profile'>Ver Perfil</a>
+            <a class='dropdown-item text-danger' href='#'>Sair</a>
+          </div>
+        </div>
+      ";
+       
+    }
+    ?>
       
-      <button class="btn btn-bighair1 mr-3 my-2 my-sm-0" type="submit">Entrar</button>
-      <button class="btn btn-light my-2 my-sm-0" type="submit">Criar Conta</button>
     </form>
   </div>
 </nav>

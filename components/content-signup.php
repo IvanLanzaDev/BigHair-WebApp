@@ -1,3 +1,9 @@
+<?php
+
+    include( "../backend/functions.class.php" );
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,17 +17,17 @@
             <a href="../index.php" class="big-hair-color-1"> <span class="badge float-right"> <i class="far fa-times-circle"></i> </span> </a> 
         </h4> 
 
-        <form class="mt-4">
+        <form class="mt-4" method="post">
             <div class="form-group">
-                <input type="text" class="form-control big-hair-border-1 border-radius-default" placeholder="Nome completo">
+                <input type="text" class="form-control big-hair-border-1 border-radius-default" placeholder="Nome completo" name="name_user" required>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control big-hair-border-1 border-radius-default" placeholder="Email">
+                <input type="email" class="form-control big-hair-border-1 border-radius-default" placeholder="Email" name="email_user" required>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control big-hair-border-1 big-hair-color-2 border-radius-default" placeholder="Senha">
+                <input type="password" class="form-control big-hair-border-1 big-hair-color-2 border-radius-default" placeholder="Senha" name="pass_user" required>
             </div>
-            <button type="submit" class="btn btn-bighair1 btn-block btn-lg mt-5 mb-4"> Criar Conta </button>
+            <button type="submit" class="btn btn-bighair1 btn-block btn-lg mt-5 mb-4" name="btn_new_user"> Criar Conta </button>
         </form>
     </div>
 
@@ -36,17 +42,17 @@
                     mais.
                 </p>
 
-                <form>
+                <form method="post">
                 <div class="form-group">
-                        <input type="text" class="form-control access-form-control" placeholder="Nome Completo">
+                        <input type="text" class="form-control access-form-control" placeholder="Nome Completo" name="name_user" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control access-form-control" placeholder="Email">
+                        <input type="email" class="form-control access-form-control" placeholder="Email" name="email_user" required>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control access-form-control" placeholder="Senha">
+                        <input type="password" class="form-control access-form-control" placeholder="Senha" name="pass_user" required>
                     </div>
-                    <button type="submit" class="btn btn-lg btn-block btn-light big-hair-color-5">Criar Conta</button>
+                    <button type="submit" class="btn btn-lg btn-block btn-light big-hair-color-5" name="btn_new_user">Criar Conta</button>
                 </form>
                 <p class="text-center text-light mt-4"> Já possui uma conta? <a href="../sign-in/" class="big-hair-color-4">clique aqui</a> </p>
                 </div>

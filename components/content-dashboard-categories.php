@@ -30,34 +30,30 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">Unhas</th>
+
+            <?php
+            
+                while($list_category = mysqli_fetch_array( $get_category )) {
+                    echo "
+                    <tr>
+                    <th scope='row'>$list_category[name_category]</th>
                     <td></td>
                     <td></td>
                     <td>
-                        <div class="dropdown dropleft ">
-                            <button class="btn btn-bighair1 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="../edit-category">Editar</a>
-                            <a class="dropdown-item text-danger" href="../delete-category">Excluir</a>
+                        <div class='dropdown dropleft '>
+                            <button class='btn btn-bighair1 dropdown-toggle btn-sm' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> Menu </button>
+                        <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+                            <a class='dropdown-item' href='../edit-category'>Editar</a>
+                            <a class='dropdown-item text-danger' href='../delete-category'>Excluir</a>
                         </div>
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">Depilação</th>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="dropdown dropleft">
-                            <button class="btn btn-bighair1 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Editar</a>
-                            <a class="dropdown-item text-danger" href="#">Excluir</a>
-                        </div>
-                        </div>
-                    </td>
-                </tr>
+                    ";
+                }
+            
+            ?>
+                
   </tbody>
 </table>
     </div>

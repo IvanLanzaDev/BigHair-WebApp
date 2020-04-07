@@ -195,30 +195,21 @@
         <h3 class="big-hair-color-1"> Cabelos e serviços de beleza </h3>
         <div class="d-flex my-4 flex-nowrap justify-content-around">
             <div class="row">
-               <a href="#" class="default-link">
-                    <div class="service-item px-4 pt-4 pb-1 bg-light border-radius-default mr-3">
-                        <img src="../assets/icons/hair-dryer.svg">
-                        <p class="mt-3 big-hair-color-1">Cabelos</p>
-                    </div>
-                </a>
-                <a href="#" class="default-link">
-                    <div class="px-4 pt-4 pb-1 bg-light border-radius-default mr-3">
-                        <img src="../assets/icons/hair-tint.svg">
-                        <p class="mt-3 big-hair-color-1">Coloração</p>
-                    </div>
-                </a>
-                <a href="#" class="default-link">
-                    <div class="px-4 pt-4 pb-1 bg-light border-radius-default mr-3">
-                        <img src="../assets/icons/hand-icon.svg">
-                        <p class="mt-3 big-hair-color-1">Unhas</p>
-                    </div>
-                </a>
-                <a href="#" class="default-link">
-                    <div class="px-4 pt-4 pb-1 bg-light border-radius-default mr-3">
-                        <img src="../assets/icons/body-icon.svg">
-                        <p class="mt-3 big-hair-color-1">Depilação</p>
-                    </div>
-                </a>
+
+            <?php
+                while($list_category = mysqli_fetch_array($get_category)) {
+                    echo "
+                        <a href='services/services.php?category=$list_category[id_category]' class='default-link'>
+                            <div class='service-item px-4 pt-4 pb-1 bg-light border-radius-default mr-3'>
+                                <img src='$list_category[icon_category]'>
+                                <p class='mt-3 big-hair-color-1'>$list_category[name_category]</p>
+                            </div>
+                        </a>
+                    ";
+                }
+            ?>
+
+               
             </div>
         </div>
         <!-- END SERVICE ICONS -->

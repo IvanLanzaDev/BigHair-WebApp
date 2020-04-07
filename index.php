@@ -1,3 +1,10 @@
+<?php
+
+include("backend/functions.class.php");
+include("backend/session.class.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

@@ -18,9 +18,9 @@
                 <a href="../" class="btn btn-outline-secondary float-right ml-1"> <i class="fas fa-times"></i> </a> 
             </p> 
 
-            <form method="post" enctype="multipart/form-data">
+            <form method="POST" action="" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nome da categoria" autofocus required>
+                    <input type="text" class="form-control" placeholder="Nome da categoria" autofocus required name="name_category">
                 </div>
 
                 <div class="form-group">
@@ -28,10 +28,10 @@
                         Icone da categoria<br>
                         Os icones devem ser no formato <span class="font-weight-bold text-danger">SVG </span>
                     </small>
-                    <input type="file" class="form-control" required aria-describedby="iconHelp">
+                    <input type="file" class="form-control" required aria-describedby="iconHelp" name="icon_category">
                 </div>
                 
-                <button type="submit" class="btn btn-bighair1 btn-lg btn-block">Cadastrar</button>
+                <button type="submit" class="btn btn-bighair1 btn-lg btn-block" name="btn_new_category">Cadastrar</button>
 
             </form>
 
