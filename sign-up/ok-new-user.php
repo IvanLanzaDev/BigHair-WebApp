@@ -60,8 +60,8 @@ body {
       </small>
 
       <div class="d-flex flex-row">
-      <a href="../" class="btn btn-outline-secondary"> Completar depois </a>
-        <a href="complete-user.php" class="btn btn-success ml-1 ml-md-3"> Completar agora </a>
+        <a href="complete-user.php" class="btn btn-success "> Completar agora </a>
+        <a href="../" class="btn btn-outline-secondary ml-1 ml-md-3"> Completar depois </a>
       </div>
     </div>
 

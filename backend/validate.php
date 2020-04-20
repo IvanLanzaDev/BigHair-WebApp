@@ -16,7 +16,7 @@
      
 
      switch($type_user){
-         case "normal":
+         case "":
             header("location: ../index.php");
          break;
          case "adm":

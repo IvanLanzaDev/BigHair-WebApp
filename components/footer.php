@@ -7,9 +7,7 @@
 <body>
 
     <!-- MOBILE -->
-    <div class="container-fluid d-block d-md-none">
-       <h1> Footer </h1>
-    </div>
+    
     <!-- END MOBILE -->
 
 
@@ -29,13 +27,12 @@
         <div class="col-3 pt-4 pb-2 big-hair-color-1">
             <h3>Contato</h3>
             <small><p class="mb-0">Telefones</p>
-            <p class="mb-0">(00) 0000 - 0000</p>
-            <p class="">(00) 90000 - 0000</p></small>
+            <p class="mb-0">(11) 97993 - 7144</p>
+            <p class="">(31) 99588 - 2631</p></small>
 
             <small><p class="mb-0">Endereço</p>
-            <p class="mb-0">Rua nome da rua, 0000</p>
-            <p class="mb-0">São caetano do sul - SP</p>
-            <p class="">CEP 00000 - 000</p></small>
+            <p class="mb-0">Rua Santo Antonio, 231</p>
+            <p class="mb-0">São Caetano do Sul - SP</p>
         </div>
         </div>
     </div>

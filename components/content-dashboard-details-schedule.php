@@ -21,28 +21,28 @@
             
             <div class="col-12 px-0">
                 <small> <p class="big-hair-color-1 mb-0"> Cliente </p> </small>
-                <p class="lead text-muted"> <small> Nicole Sousa Oliveira </small> </p>
+                <p class="lead text-muted"> <small> <?php echo $list_user_schedule_detail['name_user'] ?> </small> </p>
             </div>
 
             <div class="row col-12">
                 <div class="col-6 col-md-2 px-0">
                     <small> <p class="big-hair-color-1 mb-0"> Data </p> </small>
-                    <p class="lead text-muted"> <small> 01/04 </small> </p>
+                    <p class="lead text-muted"> <small> <?php $date_br = date('d/m', strtotime($list_schedule_detail_dashboard['date_schedule'])); echo $date_br; ?> </small> </p>
                 </div>
 
                 <div class="col-6 px-0">
                     <small> <p class="big-hair-color-1 mb-0"> Horário </p> </small>
-                    <p class="lead text-muted"> <small> 14:35 </small> </p>
+                    <p class="lead text-muted"> <small> <?php echo $list_schedule_detail_dashboard['hour_schedule'] ?> </small> </p>
                 </div>
             </div>
 
             <div class="col-12 px-0">
                 <small> <p class="big-hair-color-1 mb-0"> Serviço </p> </small>
-                <p class="lead text-muted"> <small> Depilação Completa </small> </p>
+                <p class="lead text-muted"> <small> <?php echo $list_service_schedule_detail['name_service'] ?> </small> </p>
             </div>
 
-            <a href="../delete-schedule/" class="btn btn-outline-danger btn-lg btn-block d-block d-md-none"> Desmarcar </a>
-            <a href="../delete-schedule/" class="btn btn-outline-danger btn-lg d-none d-md-inline-block"> Desmarcar </a>
+            <a href="../delete-schedule/?delete_schedule=<?php echo $list_schedule_detail_dashboard['id_schedule']; ?>" class="btn btn-outline-danger btn-lg btn-block d-block d-md-none"> Desmarcar </a>
+            <a href="../delete-schedule/?delete_schedule=<?php echo $list_schedule_detail_dashboard['id_schedule']; ?>" class="btn btn-outline-danger btn-lg d-none d-md-inline-block"> Desmarcar </a>
         </div>
     </div> <!-- </> CONTAINER -->
 

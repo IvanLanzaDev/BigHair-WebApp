@@ -28,32 +28,28 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">Davi Alves Santos</th>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="dropdown dropleft ">
-                            <button class="btn btn-bighair1 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="../details-user/">Detalhes</a>
-                        </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Raissa Gomes Azevedo</th>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="dropdown dropleft">
-                            <button class="btn btn-bighair1 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Editar</a>
-                        </div>
-                        </div>
-                    </td>
-                </tr>
+                <?php
+                
+                    while( $list_users = mysqli_fetch_array( $get_users ) ) {
+                        echo "
+                        <tr>
+                        <th scope='row'>$list_users[name_user]</th>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class='dropdown dropleft '>
+                                <button class='btn btn-bighair1 dropdown-toggle btn-sm' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> Menu </button>
+                            <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+                            <a class='dropdown-item' href='../details-user/?user_dashboard=$list_users[id_user]'>Detalhes</a>
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                        ";
+                    }
+                
+                ?>
+              
   </tbody>
 </table>
     </div>

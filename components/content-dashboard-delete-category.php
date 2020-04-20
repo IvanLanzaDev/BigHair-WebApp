@@ -20,9 +20,10 @@
             Você está prestes a <strong class="text-danger"> EXCLUIR </strong> uma categoria do site !!!
         </p>
 
-        <form class="text-center">
+        <form class="text-center" method="post">
+            <input type="hidden" value="<?php $id_delete_category ?>">
             <a href="../" class="btn btn-outline-secondary"> Cancelar </a>
-            <button type="submit" class="btn btn-danger"> Excluir </button> 
+            <button type="submit" class="btn btn-danger" name="btn_delete_category"> Excluir </button> 
         </form>
 
         </div>

@@ -28,34 +28,35 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">01/04</th>
-                    <td>Larissa Alves Cardoso</td>
+
+            <?php 
+                while($list_all_schedules = mysqli_fetch_array($get_all_schedules)) {
+                    $get_user_all_schedules = mysqli_query( $link, "SELECT * FROM user WHERE id_user = '$list_all_schedules[id_user_schedule]' " );
+                    $list_get_user_all_schedules = mysqli_fetch_array( $get_user_all_schedules );
+
+                    $date_br = date('d/m', strtotime($list_all_schedules['date_schedule']));
+
+                    echo "
+                    <tr>
+                    <th scope='row'>$date_br</th>
+                    <td>$list_get_user_all_schedules[name_user]</td>
                     <td></td>
                     <td>
-                        <div class="dropdown dropleft ">
-                            <button class="btn btn-bighair1 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="../details-schedule">Detalhes</a>
-                            <a class="dropdown-item text-danger" href="../delete-schedule">Desmarcar</a>
+                        <div class='dropdown dropleft '>
+                            <button class='btn btn-bighair1 dropdown-toggle btn-sm' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> Menu </button>
+                        <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+                            <a class='dropdown-item' href='../details-schedule?schedule=$list_all_schedules[id_schedule]'>Detalhes</a>
+                            <a class='dropdown-item text-danger' href='../delete-schedule?delete_schedule=$list_all_schedules[id_schedule]'>Desmarcar</a>
                         </div>
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <th scope="row">02/04</th>
-                    <td>Vitoria Martins Azevedo</td>
-                    <td></td>
-                    <td>
-                        <div class="dropdown dropleft">
-                            <button class="btn btn-bighair1 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Detalhes</a>
-                            <a class="dropdown-item text-danger" href="#">Desmarcar</a>
-                        </div>
-                        </div>
-                    </td>
-                </tr>
+                    ";
+                }
+
+            ?>
+
+                
   </tbody>
 </table>
     </div>

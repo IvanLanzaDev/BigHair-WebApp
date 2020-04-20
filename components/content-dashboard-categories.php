@@ -32,25 +32,35 @@
             <tbody>
 
             <?php
-            
-                while($list_category = mysqli_fetch_array( $get_category )) {
-                    echo "
+
+                if( $count_category != 0 ) {
+
+                    while($list_category = mysqli_fetch_array( $get_category )) {
+                        echo "
+                        <tr>
+                        <th scope='row'>$list_category[name_category]</th>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class='dropdown dropleft '>
+                                <button class='btn btn-bighair1 dropdown-toggle btn-sm' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> Menu </button>
+                            <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+                                <a class='dropdown-item text-danger' href='../delete-category/?category=$list_category[id_category]'>Excluir</a>
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                        ";
+                    }
+                    
+            }else{
+                echo "
                     <tr>
-                    <th scope='row'>$list_category[name_category]</th>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class='dropdown dropleft '>
-                            <button class='btn btn-bighair1 dropdown-toggle btn-sm' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> Menu </button>
-                        <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
-                            <a class='dropdown-item' href='../edit-category'>Editar</a>
-                            <a class='dropdown-item text-danger' href='../delete-category'>Excluir</a>
-                        </div>
-                        </div>
-                    </td>
-                </tr>
-                    ";
-                }
+                        <th scope='row' class='text-danger'> Não há categorias cadastradas </th>
+                        <td></td><td></td><td></td>
+                    </tr>
+                ";
+            }
             
             ?>
                 

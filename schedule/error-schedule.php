@@ -1,9 +1,17 @@
+<?php
+
+    include( "functions.class.php" ); include( "session.class.php" );
+
+    $date_error = $_GET['date_confirm_schedule'];
+    $id_service_error = $_GET['id_confirm_schedule'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BigHair Extension - Dashboard</title>
+    <title>BigHair Extension</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/style.css">
@@ -45,14 +53,16 @@ body {
 <body>
 
     <div class="message-container text-center">
-      <img src="../../assets/icons/ok-icon.svg" width="100vw">
-      <h1 class="text-success"> Tudo certo ! </h1>
+      <img src="../assets/imgs/error-schedule.svg" >
+      <h1 class="text-danger"> Ops !!! </h1>
       <small>
-        <p class="lead"> A categoria foi <span class="text-danger"> editada! </span>
+        <p class="lead text-danger"> O horário escolhido não está disponivel. </p>
+        <p class="text-muted"> Por favor escolha outro horário. </p>
+        
       </small>
 
       <div class="d-flex flex-row">
-      <a href="../categories" class="btn btn-success btn-lg btn-block"> Ver categorias cadastradas </a>
+        <a href="./?date_schedule=<?php echo $date_error; ?>&&id_service_schedule=<?php echo $id_service_error; ?>" class="btn btn-success btn-block"> Tentar Novamente </a>
       </div>
     </div>
 

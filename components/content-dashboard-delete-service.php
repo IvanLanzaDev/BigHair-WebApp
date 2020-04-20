@@ -20,9 +20,9 @@
             Você está prestes a <strong class="text-danger"> EXCLUIR </strong> um serviço do site !!!
         </p>
 
-        <form class="text-center">
+        <form class="text-center" method="post">
             <a href="../" class="btn btn-outline-secondary"> Cancelar </a>
-            <button type="submit" class="btn btn-danger"> Excluir </button> 
+            <button type="submit" class="btn btn-danger" name="btn_delete_service"> Excluir </button> 
         </form>
 
         </div>

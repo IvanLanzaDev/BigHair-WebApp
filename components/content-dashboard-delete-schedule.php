@@ -20,9 +20,15 @@
             Você está prestes a <strong class="text-danger"> DESMARCAR </strong> um agendamento !!!
         </p>
 
-        <form class="text-center">
+        <form class="text-center" method="post">
             <a href="../" class="btn btn-outline-secondary"> Voltar </a>
-            <button type="submit" class="btn btn-danger"> Desmarcar </button> 
+            <?php 
+            
+                // /$delete_schedule_url = $_GET['delete_schedule'];
+                    
+                //echo "<input type='hidden' name='id_schedule' value='$delete_schedule_url'>";
+            ?>
+            <button type="submit" class="btn btn-danger" name="btn_delete_schedule"> Desmarcar </button> 
         </form>
 
         </div>

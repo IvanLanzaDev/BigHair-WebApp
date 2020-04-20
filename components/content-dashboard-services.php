@@ -30,34 +30,29 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">Unhas</th>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="dropdown dropleft ">
-                            <button class="btn btn-bighair1 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="../edit-service">Editar</a>
-                            <a class="dropdown-item text-danger" href="../delete-service">Excluir</a>
-                        </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Depilação Completa</th>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <div class="dropdown dropleft">
-                            <button class="btn btn-bighair1 dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Editar</a>
-                            <a class="dropdown-item text-danger" href="#">Excluir</a>
-                        </div>
-                        </div>
-                    </td>
-                </tr>
+                <?php
+                
+                    while( $list_services = mysqli_fetch_array( $get_service_dashboard ) ) {
+                        echo "
+                        <tr>
+                        <th scope='row'>$list_services[name_service]</th>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class='dropdown dropleft '>
+                                <button class='btn btn-bighair1 dropdown-toggle btn-sm' type='button' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'> Menu </button>
+                            <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+                                <a class='dropdown-item' href='../edit-service/?edit_service=$list_services[id_service]'>Editar</a>
+                                <a class='dropdown-item text-danger' href='../delete-service/?delete_service=$list_services[id_service]'>Excluir</a>
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                        ";
+                    }
+                
+                ?>
+                
   </tbody>
 </table>
     </div>

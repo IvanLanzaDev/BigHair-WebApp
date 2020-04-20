@@ -1,9 +1,16 @@
+<?php
+
+include("../backend/functions.class.php");
+include("../backend/session.class.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BigHair Extension - Dashboard</title>
+    <title>BigHair Extension</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/style.css">
@@ -45,14 +52,17 @@ body {
 <body>
 
     <div class="message-container text-center">
-      <img src="../../assets/icons/ok-icon.svg" width="100vw">
-      <h1 class="text-success"> Tudo certo ! </h1>
+      <img src="../assets/imgs/edit-profile.svg">
+      <h1 class="text-success"> Prontinho </h1>
       <small>
-        <p class="lead"> O serviço foi <span class="text-success"> criado! </span>
+        <p class="lead"> Dados alterados </p>
+        <p class="text-muted"> Tudo o que você solicitou foi atendido.<br>Seu perfil está atualizado. </p>
+        
       </small>
 
-      <div class="d-flex flex-row">
-      <a href="../services" class="btn btn-success btn-lg btn-block"> Ver serviços cadastrados </a>
+      <div class="d-flex flex-row justify-content-around">
+        <a href="../" class="btn btn-success "> Continuar </a>
+        <a href="../profile/?user=<?php echo $user_login_info['id_user']; ?>" class="btn btn-outline-secondary ml-1 ml-md-3"> Ver perfil </a>
       </div>
     </div>
 
